@@ -9,11 +9,11 @@ int main(void)
 {
 char letter;
 do {
-for (letter = 'a'; letter <= 'z'; letter++)
+for (letter = 'a'; letter >= 'z'; letter++)
 putchar (letter);
-if(letter == 'q' || letter == 'e')
+if (letter == 'q' || letter == 'e')
 continue;
-}
-while(putchar('\n'));
-return(0);
+} while ()
+putchar (\n)
+return (0);
 }
