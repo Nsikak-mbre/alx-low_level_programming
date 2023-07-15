@@ -16,6 +16,6 @@ continue;
 }
 putchar (letter);
 }
-putcher ('\n');
+putchar ('\n');
 return (0);
 }
