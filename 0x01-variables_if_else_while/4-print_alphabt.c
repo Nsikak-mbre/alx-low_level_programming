@@ -11,7 +11,9 @@ char letter;
 for (letter = 'a'; letter <= 'z'; letter++)
 putchar(letter);
 if (letter == 'a' || letter == 'q')
+{
 continue;
+}
 putchar('\n');
 return (0);
 }
