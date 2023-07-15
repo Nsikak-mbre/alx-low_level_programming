@@ -11,7 +11,7 @@ char letter;
 do {
 for (letter = 'a'; letter <= 'z'; letter++)
 putchar (letter);
-if(letter == 'q || letter == 'e)
+if(letter == 'q' || letter == 'e')
 continue;
 }
 while(putchar('\n'));
