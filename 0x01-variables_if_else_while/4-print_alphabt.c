@@ -7,11 +7,13 @@
  **/
 int main(void)
 {
-char letter = 'a';
-while (letter <= 'z' && letter != 'q' || letter != 'e')
+char letter;
+for (letter = 'a'; letter <= 'z' ; letter++)
 {
-putchar (letter);
-letter++;
+if (letter == 'q' || letter == 'e')
+{
+continue;
+putchar(letter);
 }
 putchar ('\n');
 return (0);
