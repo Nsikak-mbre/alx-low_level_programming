@@ -14,6 +14,6 @@ putchar (letter);
 if (letter == 'q' || letter == 'e')
 continue;
 } while (letter++);
-putchar ('\n')
+putchar ('\n');
 return (0);
 }
