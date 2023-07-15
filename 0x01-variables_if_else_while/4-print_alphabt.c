@@ -14,8 +14,7 @@ if (letter == 'q' || letter == 'e')
 {
 continue;
 }
-putchar (letter);
-putchar ('\n');
+putchar (letter\n);
 }
 return (0);
 }
