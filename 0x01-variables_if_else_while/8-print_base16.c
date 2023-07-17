@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <unistd.h>
+
 /**
  *  *  * main - Entry point
- *   *   * Description: prints all the numbers of base 16 in lowercase
+ *   *   * Description: possible combinations
  *    *    * Return: o
  **/
+
 int main(void)
 {
 int num;
