@@ -6,7 +6,7 @@
  */
 int _isalpha(int c)
 {
-if (isalpha(c) == 0)
+if((ch >= 97 && ch <= 122) || (ch >= 65 && ch <= 90))
 return (0);
 else
 return (1);
