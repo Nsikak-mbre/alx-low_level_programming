@@ -1,16 +1,20 @@
 #include "main.h"
+
 /**
- * * main - print putchar followed by a new line
- * * Return: 0 (success)
- */
+ *  *  * main - prints _putchar and a new line
+ *   *   *
+ *    *    * Return: o
+ **/
 int main(void)
 {
-char word [] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
-int i;
-for (i = 0 ; i <= 8 ; i++)
-{
-_putchar(word[i]);
-}
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 return (0);
 }
-
