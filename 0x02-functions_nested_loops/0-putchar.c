@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-char word [] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+char word [] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r',"\n"};
 int i;
 for (i = 0 ; i <= 8 ; i++)
 {
-_putchar(word[i]\n);
+_putchar(word[i]);
 }
 return (0);
 }
