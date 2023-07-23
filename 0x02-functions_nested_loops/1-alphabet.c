@@ -11,4 +11,5 @@ char lowerCasing;
 for (lowerCasing = 'a'; lowerCasing <= 'z'; lowerCasing++)
 _putchar(lowerCasing);
 _putchar ('\n');
+}
 
