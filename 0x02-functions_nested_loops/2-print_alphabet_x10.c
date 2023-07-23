@@ -12,9 +12,9 @@ int j, i;
 for (j = 0; j <= 9; j++)
 {
 for (i = 'a'; i <= 'z' ; i++)
-putchar(i);
+_putchar(i);
 }
-putchar('\n');
+_putchar('\n');
 }
-return (0);
+return ('0');
 }
