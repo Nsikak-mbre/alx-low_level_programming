@@ -7,9 +7,6 @@
 
 void _puts(char *str)
 {
-while (*str)
-{
-putchar("*str");
-}
+puts(str);
 putchar('\n');
 }
