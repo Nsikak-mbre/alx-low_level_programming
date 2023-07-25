@@ -7,12 +7,7 @@
  */
 void swap_int(int *a, int *b)
 {
-if (*a)
-{
-*b = *a;
-}
-else if (*b)
-{
+int *holdVal = *a;
 *a = *b;
-}
+*b = holdVal;
 }
