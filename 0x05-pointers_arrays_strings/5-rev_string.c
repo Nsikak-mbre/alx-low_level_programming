@@ -12,7 +12,7 @@ int strLent = strlen(s);
 for (i = strLent - 1; i >= 0; i--)
 {
 _putchar(s[i]);
-if(s[i] = 0)
+if([i] = 0)
 break;
 }
 }
