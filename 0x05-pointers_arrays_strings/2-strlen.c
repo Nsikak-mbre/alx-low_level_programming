@@ -9,7 +9,11 @@
  */
 int _strlen(char *s)
 {
-return (strlen(s));
+int size = 0;
+if (*s)
+{
+    size++;
+    s++;
 }
 
 
