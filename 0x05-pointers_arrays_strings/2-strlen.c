@@ -8,7 +8,9 @@
  *    *    * Return: 0
  */
 int _strlen(char *s)
-{strlen(*s)
+{
+int len;
+len = strlen(*s)
 return (0);
 }
 
