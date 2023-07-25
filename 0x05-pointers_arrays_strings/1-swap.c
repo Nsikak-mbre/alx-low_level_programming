@@ -7,8 +7,12 @@
  */
 void swap_int(int *a, int *b)
 {
-if ((*a) && (*b))
+if (*a)
 {
-(*a =*b) && (*b =*a);
+*b = *a;
+}
+else if (*b)
+{
+*a = *b;
 }
 }
