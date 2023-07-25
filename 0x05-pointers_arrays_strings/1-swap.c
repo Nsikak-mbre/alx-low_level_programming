@@ -8,8 +8,9 @@
 void swap_int(int *a, int *b)
 {
 int holdVal = *a;
-while (*a = *b)
+int holdVal2 = *b
+while (*a)
 {
-*b = holdVal;
+*b = holdVal && *a = holdVal2;
 }
 }
