@@ -8,7 +8,7 @@
 void swap_int(int *a, int *b)
 {
 int holdVal = *a;
-int holdVal2 = *b
+int holdVal2 = *b;
 while (*a)
 {
 *b = holdVal && *a = holdVal2;
