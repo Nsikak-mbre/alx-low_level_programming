@@ -12,8 +12,10 @@ int _strlen(char *s)
 int size = 0;
 if (*s)
 {
-    size++;
-    s++;
+size++;
+s++;
+}
+return (size);
 }
 
 
