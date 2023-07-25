@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <string.h>
 /**
  *  *  * print_rev - revrses string character
  *   *   * @s: the character
