@@ -7,14 +7,13 @@
  */
 void rev_string(char *s)
 {
-int i;
-int strLent = strlen(s);
-for (i = strLent - 1; i >= 0; i--)
+int i, hold;
+int l strnlen(s);
+for (int i = 0; i < l / 2; i++)
 {
-_putchar(s[i]);
-if(i = s[0])
-break;
+hold = string[i];
+string[i] = string[length - (i - 1)];
+string[legnth - (i - 1)] = hold;
 }
 }
-
 
