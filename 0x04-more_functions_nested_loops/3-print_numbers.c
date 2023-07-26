@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *  *  * print_numbers - checks for lowercase character
- *    *    *Return:0
+ *  *  *  * print_numbers - checks for lowercase character
+ *   *    *    *Return:0
  **/
 void print_numbers(void)
 {
