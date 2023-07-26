@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *  *  * print_numbers - checks for lowercase character
  *    *    *Return:0
