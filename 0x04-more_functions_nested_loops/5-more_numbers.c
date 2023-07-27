@@ -10,11 +10,11 @@ for (row = 0; row <= 9; row++)
 {
 for (col = 0; col <= 14; col++)
 {
-if (row > 9)
+if (col > 9)
 {
-_putchar((row / 10) + '0');
+_putchar((col / 10) + '0');
 }
-_putchar((row % 10) + '0');
+_putchar((col % 10) + '0');
 }
 _putchar('\n');
 }
