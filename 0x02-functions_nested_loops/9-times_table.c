@@ -4,7 +4,7 @@
  *  *  *times_table - multiply in 9 places
  *     **main: the result of the multiplier
  **/
-void times_tables(void)
+void times_table(void)
 {
 int multiplier = 0;
 while (multiplier <= 9)
