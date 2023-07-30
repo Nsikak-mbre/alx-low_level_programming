@@ -2,7 +2,7 @@
 
 /**
  *  *  *times_table - multiply in 9 places
- *     **desc: the result of the multiplier
+ *     **main: the result of the multiplier
  **/
 void times_tables(void)
 {
