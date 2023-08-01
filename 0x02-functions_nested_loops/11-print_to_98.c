@@ -20,7 +20,7 @@ _putchar(i);
 }
 else
 {
-int j
+int j;
 for (j = n; j <= 98; j++)
 {
 _putchar(j);
