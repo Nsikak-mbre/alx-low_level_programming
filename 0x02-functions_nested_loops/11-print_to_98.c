@@ -10,22 +10,11 @@
 
 void print_to_98(int n)
 {
-if (n >= 0)
+int i = n;
+while (i <= 98)
 {
-int i;
-for (i = n; i <= 98; i++)
-{
-_putchar(i);
+printf("%d, ", i);
+i++;
 }
+printf("%d\n", 98);
 }
-else
-{
-int j;
-for (j = n; j <= 98; j++)
-{
-_putchar(j);
-}
-}
-_putchar('\n');
-}
-
