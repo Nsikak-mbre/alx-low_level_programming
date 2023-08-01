@@ -16,5 +16,5 @@ while (i <= 98)
 printf("%d, ", i);
 i++;
 }
-printf("%d\n", 98);
+_putchar('\n');
 }
