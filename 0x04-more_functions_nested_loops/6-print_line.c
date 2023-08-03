@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  *  * print_line
+ *  *  * print_line - prints line using underscore
  *   *   * @n: number of times to print underscore
  *     *     *
  *      *      * Return: void
@@ -9,18 +9,10 @@
 
 void print_line(int n)
 {
-int count;
-if (n <= 0)
+while (n != 0)
 {
+putchar('_');
+n--;
+}
 _putchar('\n');
-}
-else
-{
-for (count = n; count < n; count++)
-{
-while (count < n)
-_putchar('_');
-_putchar('\n');
-}
-}
 }
