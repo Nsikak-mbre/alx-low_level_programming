@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -7,7 +8,7 @@
  **/
 
 
-void FizzBuzz(void)
+int main(void)
 {
 int i;
 for (i = 1; i <= 100; i++)
