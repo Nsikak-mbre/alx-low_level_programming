@@ -4,7 +4,7 @@
 /**
  *  *  *main - buzz-words as required
  *   *     *
- *    *      * Return: void
+ *    *      * Return: 0
  **/
 
 
@@ -27,7 +27,7 @@ printf("FizzBuzz ");
 }
 else
 {
-printf("%d ", i);
+printf("%d", i);
 }
 }
 printf("\n");
