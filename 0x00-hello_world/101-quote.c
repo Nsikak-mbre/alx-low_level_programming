@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <unistd.h>
 
-/*
-   *main-Entry
-*	return : 1
-*/
+/**
+ * main - Entry
+ * Return: 1
+ */
 
 int main(void)
 {
