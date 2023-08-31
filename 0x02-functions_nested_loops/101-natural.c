@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	unsigned long int sum, first, second;
+	int sum, first, second;
 	int i;
 
 	for (i = 0; i < 1024; i++)
@@ -23,6 +23,6 @@ int main(void)
 
 	}
 	sum = first + second;
-	printf("%lu\n", sum);
+	printf("%i\n", sum);
 	return (0);
 }
