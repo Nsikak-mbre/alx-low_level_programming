@@ -23,6 +23,6 @@ int main(void)
 
 	}
 	sum = first + second;
-	printf("%d\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
