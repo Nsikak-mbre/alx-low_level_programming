@@ -9,7 +9,7 @@ int main(void)
 {
 	int i, sum, first, second;
 
-	for (i = -; i < 1024; i++)
+	for (i = 0; i < 1024; i++)
 	{
 		if ((i % 3) == 0)
 		{
@@ -22,6 +22,6 @@ int main(void)
 
 	}
 	sum = first + second;
-	printf("%d\n"sum);
+	printf("%d\n",sum);
 	return (0);
 }
