@@ -4,13 +4,14 @@
  *   *   * @str: the character
  *    *    * Return: void function
  **/
-void puts2(char *str);
+void puts2(char *str)
 {
-int = 0;
-while (str[i] != '\0')
-{
-_putchar(str[i]);
-i += 2;
-}
-putchar('\n');
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		i = i + 2;
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
