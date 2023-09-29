@@ -3,7 +3,7 @@
 /**
  *  *  * _puts_recursion - output strings
  *   *   * @s: char string array
- *     *     * Return: reversed string
+ *     *     * Return: actual string
  **/
 
 void _puts_recursion(char *s)
