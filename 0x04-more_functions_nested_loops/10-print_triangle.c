@@ -9,7 +9,7 @@ void print_triangle(int size)
 {
 	int col, shape;
 
-	if (size > 0)
+	if (size >= 0)
 	{
 		for (col = 1; col <= size; col++)
 		{
