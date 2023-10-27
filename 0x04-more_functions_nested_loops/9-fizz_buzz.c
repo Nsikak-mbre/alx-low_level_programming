@@ -1,34 +1,34 @@
 #include "main.h"
 #include <stdio.h>
 
-/*
- * main - Fizz-Buzz
+/**
+ * main - Fizz-buzz
+ * @void: takes no argument
  * Return: 0
  */
-
-
 int main(void)
 {
-int i;
-for (i = 1; i <= 100; i++)
-{
-if (i % 3 == 0 && i % 5 != 0)
-{
-printf(" Fizz");
+	int i;
+
+	for (i = 1; 1 <= 100; i++)
+	{
+		if (i % 3 == 0 && i % 5 != 0)
+		{
+			printf(" Fizz");
+		}
+		else if (i % 5 == 0 && i % 3 != 0)
+		{
+			printf(" Buzz");
+		}
+		else if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf(" FizzBuzz");
+		}
+		else
+		{
+			printf(" %d", i);
+		}
+	}
+	printf("\n");
 }
-else if (i % 5 == 0 && i % 3 != 0)
-{
-printf(" Buzz");
-}
-else if (i % 3 == 0 && i % 5 == 0)
-{
-printf(" FizzBuzz");
-}
-else
-{
-printf(" %d", i);
-}
-}
-printf("\n");
-return (0);
-}
+
