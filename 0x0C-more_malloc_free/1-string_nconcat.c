@@ -13,7 +13,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *joined;
 	size_t s1_len = 0, s2_len = 0, count;
-	
+
 	if (s1 == NULL)
 		s1 = "";
 
@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	joined[count] = '\0';
 
-	return joined;
+	return (joined);
 }
 
 
