@@ -1,5 +1,11 @@
 #ifndef __DOG_H__
 #define __DOG_H__
+
+/**
+ * dog_t - Typedef for struct dog
+ */
+typedef struct dog dog_t;
+
 /**
  * struct dog - dog
  * @name: first member
