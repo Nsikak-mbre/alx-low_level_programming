@@ -26,7 +26,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 		cpy_wrd = write(desc, text_content, len);
 
-		if(cpy_wrd == -1)
+		if (cpy_wrd == -1)
 			return (-1);
 	}
 	close(desc);
