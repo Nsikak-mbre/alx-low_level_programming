@@ -1,30 +1,22 @@
 #include "main.h"
 #include <string.h>
 
-/**
- *  *  * puts_half - divides string in half and print second half
- *   *   * @str: the character
- */
-
 void puts_half(char *str)
 {
-	int len = strlen(str);
+	int str_len = strlen(str);
+	int half = str_len / 2;
+	int i;
 
-	if (len % 2 == 0)
+	if (str_len % 2 != 0)
 	{
-		int start =  len / 2;
-		int i;
-
-		for (i = start; i < len; i++)
+		for (i = half; i < str_len; i++)
 			_putchar(str[i]);
 	}
-	else if (len % 2 != 0)
+	else
 	{
-		int start = (len - 1) / 2;
-		int j;
-
-		for (j = start; j < start; j++)
-			_putchar(str[j]);
+		for (i = half; i < str_len; i++)
+			_putchar(str[i]);
 	}
 	_putchar('\n');
 }
+
