@@ -1,5 +1,9 @@
 #include "main.h"
 #include <string.h>
+/**
+ * puts_half - self-explanatory
+ * @str: arguments container
+ */
 
 
 void puts_half(char *str)
