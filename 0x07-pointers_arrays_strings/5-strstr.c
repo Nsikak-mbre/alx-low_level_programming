@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef.h>
+#include <stdio.h>
 /**
  * _strstr - will explain later
  * @haystack: string that may contain needle char
@@ -10,29 +10,14 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
-	char *ptr = NULL;
+	int i = 0;
 
-	for (i = 0; needle[i] != '\0'; i++)
+	while (*haystack)	
 	{
-		for (j = 0; haystack[j] != '\0'; j++)
-		{
-			if (needle[i] == haystack[j])
-			{
-				if (ptr == NULL)
-				{
-					ptr = &haystack[j];
-				}
-				i++;
-			}
-			else
-			{
-				ptr = NULL;
-				i = 0;
-			}
-			if (needle[i] == '\0')
-				return (ptr);
-		}
+		while (haystack[i] && needle[i] && haystack[i] == needle[i])
+			i++;
+		if (!needle[i])
+		haystack++;
 	}
-	return (ptr);
+	return NULL;
 }
