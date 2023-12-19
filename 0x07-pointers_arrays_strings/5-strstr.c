@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stddef.h>
 /**
  * _strstr - will explain later
  * @haystack: string that may contain needle char
@@ -10,13 +10,14 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i = 0;
+	int i;
 
 	while (*haystack)
 	{
 		while (haystack[i] && needle[i] && haystack[i] == needle[i])
 			i++;
 		if (!needle[i])
+			return (haystack);
 		haystack++;
 	}
 	return (NULL);
