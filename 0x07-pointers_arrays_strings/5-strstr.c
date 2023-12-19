@@ -1,25 +1,29 @@
 #include "main.h"
-#include <stdio.h>
-
+#include <stddef.h>
 /**
- *  *  * _strstr - locate a substring in haystack string
- *   *   * @haystack: string that may contain needle characters
- *    *    * @needle: string the check against haystack
- *     *     *
- *      *      * Return: modified haystack if chars are found, NULL if not
- **/
+ * _strstr - will explain later
+ * @haystack: string that may contain needle char
+ * @needle: char to check against haystack
+ * Return: pointer to matched char on success, NULL otherwise
+ */
+
 
 char *_strstr(char *haystack, char *needle)
 {
-int i = 0;
-while (*haystack)
-{
-i = 0;
-while (haystack[i] && needle[i] && haystack[i] == needle[i])
-i++;
-if (!needle[i])
-return (haystack);
-haystack++;
-}
-return (NULL);
+	int i, j;
+	char *ptr = NULL;
+
+	for (i = 0; needle[i] != 0; i++)
+	{
+		for ( j = 0; haystack[j] != 0; j++)
+		{
+			if (needle[i] == haystack[j])
+			{
+				ptr = &haystack[j];
+				return (ptr);
+			}
+		}
+
+	}
+	return (ptr);
 }
