@@ -31,8 +31,8 @@ char *_strstr(char *haystack, char *needle)
 				i = 0;
 			}
 			if (needle[i] == '\0')
-				return ptr;
+				return (ptr);
 		}
 	}
-	return ptr;
+	return (ptr);
 }
