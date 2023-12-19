@@ -1,34 +1,20 @@
 #include "main.h"
-
-/**
- *  *  * _strspn - search string for set of bytes
- *   *   * @s: char string array
- *    *    * @accept: char array to check bytes with
- *     *     * Return: Number of bytes segment  `s`
- **/
-
 unsigned int _strspn(char *s, char *accept)
 {
-int i;
-int j;
-int c;
-i = 0;
-c = 0;
-while (s[i] != '\0')
-{
-j = 0;
-while (accept[j] != '\0')
-{
-if (s[i] == accept[j])
-{
-c++;
-break;
-}
-j++;
-}
-if (accept[j] == '\0')
-break;
-i++;
-}
-return (c);
+	int i,j;
+	unsigned int count = 0;
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				count++;
+				break;
+			}
+		}
+		if (accept[j] == '\0')
+			break;
+	}
+	return count;
 }
