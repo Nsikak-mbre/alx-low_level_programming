@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main = prints file name
+ * main - prints file name
  * Return: 0 on success
  */
 int main(void)
