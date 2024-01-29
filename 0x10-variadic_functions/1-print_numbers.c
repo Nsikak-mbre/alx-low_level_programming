@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-#include <stdlib.h>
+#include <stdarg.h>
 #include <stdio.h>
 /**
  * print_numbers - self explanatory
@@ -17,6 +17,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		printf("\n");
 		return;
 	}
+
 	va_start(ptr, n);
 	for (i = 0; i < n; ++i)
 	{
