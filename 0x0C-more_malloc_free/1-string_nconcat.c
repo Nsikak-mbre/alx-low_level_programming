@@ -5,48 +5,45 @@
  * string_nconcat -  join two strings
  * @s1: contains first string
  * @s2: contains second string
+ * @n: size to be copied
  * Return: 0 on success
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int size1 = 0, size2 = 0, both;
 	char *ptr;
+	size_t i, j, size1 = 0, size2 = 0;
 
-	if (s1 == NULL || s2 == NULL)
-	{
+	if (s1 == NULL)
 		s1 = "";
+	if (s2 == NULL)
 		s2 = "";
-	}
+	while (s1[size1] != '\0')
+		size1++;
+	while (s2[size2] != '\0')
+		size2++;
+	ptr = malloc(sizeof(char) * (size1 + (n + 1)));
 
-	while(s1 != '\0' && s2 != '\0')
+	if (n > size2)
 	{
-		s1++;
-		s2++;
-		both = s1 + s2;
+		n = size2;
 	}
-
-	ptr = malloc(both * sizeof(char) + 1);
-
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-
-	if (n >= s2)
-	{
-		n = s2;
-	}
-
-	for (i = 0; i <= s1; i++)
+	for (i = 0; i < size1; i++)
 	{
 		ptr[i] = s1[i];
 	}
-	for ( i = 0; i <= n; i++)
+	for (j = 0; j < n && s2[j] != '\0'; j++)
 	{
-		ptr[i] = s2[i];
+		ptr[i++] = s2[j];
 	}
 
-	ptr = '\0';
+	ptr[i] = '\0';
 	return (ptr);
 }
+
+
+
 
