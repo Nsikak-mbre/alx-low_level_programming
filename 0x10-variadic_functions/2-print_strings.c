@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		temp = va_arg(ptr, char *);
 
-		if (temp != NULL)
+		if (temp)
 		{
 			printf("%s", temp);
 		}
