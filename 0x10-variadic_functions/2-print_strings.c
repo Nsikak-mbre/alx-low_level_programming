@@ -2,7 +2,6 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 
-
 /**
  * print_strings - self explanatory
  * @separator: plcaed in=between strings
@@ -27,7 +26,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			printf("nil");
+			printf("(nil)");
 		}
 		if (i < n - 1)
 			if (separator)
