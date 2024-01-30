@@ -8,19 +8,19 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *ptr;
+	char *ptr;
 	unsigned int i;
 
-	if (size == 0)
+	if (size <= 0 || nmemb <= 0)
 	{
 		return (NULL);
 	}
-	ptr = malloc(sizeof(unsigned int) * size + 1);
+	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 		return (NULL);
-	for (i = 0; i < size; i++)
+	for (i = 0; i < size * nmemb; i++)
 	{
-		ptr[i] = nmemb;
+		ptr[i] = 0;
 	}
 	ptr[i] = '\0';
 	return (ptr);
