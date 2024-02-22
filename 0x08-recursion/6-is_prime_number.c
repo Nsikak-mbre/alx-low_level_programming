@@ -1,5 +1,8 @@
 #include "main.h"
 /**
+ * fac 
+=======
+/**
   * is_prime_helper - helps original function
   * @n: The number to be checked
   * @div: the divisor
