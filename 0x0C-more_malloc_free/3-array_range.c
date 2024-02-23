@@ -1,43 +1,24 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _memset -  copy char
- * @s: string
- * @b: input
- * @n: bytes
- * Return: string
+ * array_range - places element in a hierachy in an array(min-max)
+ * @min: smallest elem value
+ * @max: largest elem value
+ * Return: pointer to newly created array
  */
-char *_memset(char *s, char b, unsigned int n)
+int *array_range(int min, int max)
 {
-	unsigned int i;
+	int *ptr;
+	size_t arr_size, i;
 
-	for (i = 0; i < n; i++)
-	{
-		s[i] = b;
-	}
-	return (s);
-}
-
-/**
- * _calloc - Allocates memory for an array
- * @nmemb: number of elements
- * @size: size of each bit
- * Return: newly allocated mem
- */
-
-void *_calloc(unsigned int nmemb, unsigned int size)
-{
-	void *first_elem_ptr;
-	size_t total_elem_size, i;
-
-	if ((nmemb || size) == 0)
+	if (min > max)
 		return (NULL);
-
-	total_elem_size = nmemb * size;
-	first_elem_ptr = malloc(each_element);
+	arr_size = max - min + 1;
+	ptr = malloc(sizeof(int) * arr_size);
 	if (ptr == NULL)
 		return (NULL);
-	_memset(first_elem_ptr, 0, total_elem_size);
+	for (i = 0; i < arr_size; i++)
+	ptr[i] = min + i;
 
-	return (first_elem_ptr);
+	return (ptr);
 }
