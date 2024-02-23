@@ -37,7 +37,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	first_elem_ptr = malloc(total_elem_size);
 	if (first_elem_ptr == NULL)
 		return (NULL);
-	memset(first_elem_ptr, 0, total_elem_size);
+	_memset(first_elem_ptr, 0, total_elem_size);
 	return (first_elem_ptr);
 }
 
