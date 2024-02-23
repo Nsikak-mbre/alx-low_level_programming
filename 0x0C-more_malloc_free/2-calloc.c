@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 #include <stdlib.h>
 /**
  * _memset - copy char
@@ -31,7 +30,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	void *first_elem_ptr;
 	size_t total_elem_size;
 
-	if ((size || nmemb) == 0)
+	if (size == 0 || nmemb == 0)
 		return (NULL);
 	total_elem_size = nmemb * size;
 	first_elem_ptr = malloc(total_elem_size);
