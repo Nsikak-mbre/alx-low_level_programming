@@ -3,7 +3,7 @@
 
 /**
  * free_dog -  frees allocated space
- * @d - allocated space
+ * @d: allocated space
  * Return: 0 on success
  */
 
