@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *  *  * print_triangle - creates a triangle
- *   *   * @size: the character
- *    *    * Return: result showing a triangle impression
+ * print_triangle - creates a triangle
+ * @size: the character
+ * Return: result showing a triangle impression
  **/
 
 void print_triangle(int size)
@@ -21,6 +21,7 @@ void print_triangle(int size)
 				continue;
 			_putchar('\n');
 		}
-		_putchar('\n');
+		
 	}
+	_putchar('\n');
 }
