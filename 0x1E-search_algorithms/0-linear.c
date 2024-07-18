@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include  "search_algos.h"
 /**
-* linear_search - Performs a linear search
+* linear_search - Performs a search using linear algorithm
 * @array: Points to first elem in array
 * @size: specify size of array
 * @value: Value to search for
